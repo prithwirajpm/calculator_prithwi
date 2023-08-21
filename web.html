@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <!-- DOM - document object model -->
+    <h1>Javascript - A scripting Language</h1>
+    <h2 onmouseover="colorChange()" onmouseleave="colorChangel()" id="dom">DOM - Document Object Model</h2>
+    <h4>Applying js</h4>
+    <ol>
+        <li>Internal js : use script tag</li>
+        <li>External js : using external js file, to link external js with html use script tag</li>
+    </ol>
+    <h4>DOM methods</h4>
+    <ol>
+        <li>using tag name :</li>
+        <li>using id :</li>
+        <li>using classname :</li>
+        <li>using queryselector :</li>
+        <li>using query selectorAll :</li>
+    </ol>
+    <h4>Events : Trigger </h4>
+    <button onclick="btnClick()">Click Here</button>
+
+</body>
+<script>
+    function btnClick() {
+        alert("Button Clicked!!!!")
+    }
+    function colorChange() {
+        item=document.getElementById('dom')
+        item.style.color = "red"
+        item.style.fontSize = "30px"
+        dom.innerHTML = "DOM"
+    }
+    function colorChangel() {
+        dom.style.color = "black"
+        dom.style.fontSize = "25px"
+        dom.innerText = "DOM - Document Object Model"
+    }
+</script>
+</html>
